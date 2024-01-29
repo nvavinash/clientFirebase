@@ -22,7 +22,7 @@ pauseOnFocusLoss
 draggable
 pauseOnHover
 theme="colored"
-transition: Bounce
+transition: Bounce,
 bodyClassName= "toastBody"
     />
   </React.StrictMode>
