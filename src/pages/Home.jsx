@@ -1,16 +1,20 @@
 import { Analytics } from "../components/Analytics";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { useState } from "react";
 
 export const Home =()=>{
     const {userN} = useAuth;
+
 
     return (
     <>
         <main>
             <section className="section-hero">
+            
                 <div className="container grid grid-two-cols">
                     <div className="hero-content">
+                       
                         <p>Congratulations to  <strong>{!userN? "You": userN.username} </strong>as You Got the Best IT Developers Here</p>
                         <h1>Welcome to CodeViq</h1>
                         <p>Are You Ready to take Your Business to the next level with Cutting-edge IT Solutions? Look no further..! as We Specialize in providing Innovative IT services and solutions tailored to meet your Unique needs</p>
