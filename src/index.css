@@ -6,7 +6,14 @@
   padding:0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  color-scheme: light dark;
+  color-scheme: light;
+}
+*.dark{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color-scheme: dark;
 }
 
 :root{
@@ -360,6 +367,18 @@ form input::selection{
     .section-services .card-details  h2 {
         font-size: 3.2rem;
         margin: 1.2rem 0 2.4rem 0;
+      }
+      .darkLight{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: absolute;
+        margin-left: 0;
+        cursor: pointer;
+      }
+      .darkLight p{
+        font-size: 0.95rem;
+       
       }
 
 /** -----------------------
