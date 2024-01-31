@@ -20,7 +20,7 @@ export const Service =()=>{
                         <img src={elem.thumbnail} alt="our services" width={500} height={500}/>
                     </div>
                     <div className="card-details">
-                    <div className="grid grid-two-cols">
+                    <div className="grid-card-two">
                         <div>
                         <p> Price: Rs.<s>{elem.price}</s></p>
                         </div>

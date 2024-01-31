@@ -4,7 +4,8 @@ export const Footer =()=>{
 return(
     <>
     <div className="footer">
-    <h2> &copy; 2024 CodeViq.com All Rights Reserved.</h2>
+    <p>❤</p>
+    <h3> With Codeviq &copy; Avinash All rights Reserved.</h3>
     </div>
     </>
 )
