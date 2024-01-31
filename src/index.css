@@ -6,7 +6,7 @@
   padding:0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  color-scheme: light;
+  color-scheme: dark light;
 }
 *.dark{
   margin: 0;
@@ -121,6 +121,9 @@ li{
 }
 .grid-four-cols{
   grid-template-columns: repeat(4,1fr);
+}
+.gridCard{
+  grid-template-columns: repeat(2, 1fr);
 }
 .about-content p{
   font-size: 1.5rem;
@@ -342,8 +345,10 @@ form input::selection{
   .section-services .card {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
-    border: 0.2rem solid var(--helper-color);
+    box-shadow: 0 1px 2px var(--dark-color);
+    border-radius: 0.5rem;
+    background: var(--bg-color);
+    color: var(--dark-color);
   }
     .section-services .card-img {
       text-align: center;
@@ -368,19 +373,7 @@ form input::selection{
         font-size: 3.2rem;
         margin: 1.2rem 0 2.4rem 0;
       }
-      .darkLight{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        position: absolute;
-        margin-left: 0;
-        cursor: pointer;
-      }
-      .darkLight p{
-        font-size: 0.95rem;
-       
-      }
-
+  
 /** -----------------------
 ** media query section css
 ** -------------------------  */
@@ -433,6 +426,12 @@ form input::selection{
         border: none;
       }
   .div1 h2{
-        font-size: 3.2rem;
-      }    
+        font-size: 3.0rem;
+      } 
+  .card{
+    margin: 0px;
+  }   
+   .gridCard{
+    gap: 2rem;
+   } 
 }

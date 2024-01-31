@@ -20,12 +20,12 @@ export const Service =()=>{
                         <img src={elem.thumbnail} alt="our services" width={500} height={500}/>
                     </div>
                     <div className="card-details">
-                    <div className="grid grid-two-cols">
+                    <div className="grid gridCard">
                         <div>
-                        <p> Price: Rs.<s>{elem.price}</s></p>
+                        <p> Price: <br/>Rs.<s>{elem.price}</s></p>
                         </div>
                         <div>
-                        <p>Offer Price: Rs.{elem.offerPrice}</p>
+                        <p>Offer Price:<br/> Rs.{elem.offerPrice}</p>
                         </div>
                         
                     </div>
